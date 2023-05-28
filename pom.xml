@@ -52,11 +52,7 @@
     <distributionManagement>
         <repository>
             <id>rpg-scheduler</id>
-<<<<<<< HEAD
-            <name>GitHub Packages for rpg-schedueler</name>
-=======
             <name>GitHub Packages for rpg-scheduler</name>
->>>>>>> 60d28b1 (initial project setup.)
             <url>https://maven.pkg.github.com/Paladins-Inn/rpg-scheduler</url>
         </repository>
     </distributionManagement>
