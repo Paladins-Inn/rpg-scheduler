@@ -1,4 +1,4 @@
-package de.kaiserpfalzedv.rpg.scheduler.model;
+package de.kaiserpfalzedv.rpg.scheduler.core;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -6,21 +6,21 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.time.Duration;
 import java.time.OffsetDateTime;
-import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.util.List;
 import java.util.UUID;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import de.kaiserpfalzedv.rpg.scheduler.GameSession;
-import de.kaiserpfalzedv.rpg.scheduler.Location;
-import de.kaiserpfalzedv.rpg.scheduler.Player;
+import de.kaiserpfalzedv.rpg.scheduler.core.model.GameSession;
+import de.kaiserpfalzedv.rpg.scheduler.core.model.Location;
+import de.kaiserpfalzedv.rpg.scheduler.core.model.Player;
 
 public class GameSessionTest {
     private static final UUID ID = UUID.randomUUID();
 
-    private static final OffsetDateTime DATE = OffsetDateTime.now(ZoneId.of("UTC"));
+    private static final OffsetDateTime DATE = OffsetDateTime.now(ZoneOffset.UTC);
     private static final Duration DURATION = Duration.ofHours(4L);
     private static final String TITLE = "Default Title";
     private static final String DESCRIPTION = "Description";
