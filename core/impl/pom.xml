@@ -123,6 +123,11 @@
 			<artifactId>r2dbc-postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.discord4j</groupId>
+			<artifactId>discord4j-core</artifactId>
+		</dependency>
     </dependencies>
 
 	<build>
